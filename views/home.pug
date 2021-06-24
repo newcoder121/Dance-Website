@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+
+
+    section#introSection
+            div Welcome to Tasin's Dance Academy
+            div.small Live Learn Dance
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/img/apple_logo.png", alt="sponsor image", class="spImage")
+            img(src="/static/img/microsoft_logo.png", alt="sponsor image", class="spImage")
+            img(src="/static/img/boeing.png", alt="sponsor image", class="spImage")
+            img(src="/static/img/ey.png", alt="sponsor image", class="spImage")
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+                h3 Dance Perfection 
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/3.png")
+
+                    div.card-content 
+                        p This is the best Dance Academy in NRW
+        div.card
+                h3 Dance the way you like 
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/5.png")
+
+                    div.card-content 
+                        p This is the best Dance Academy in NRW
+        div.card
+                h3 Expert Teaching 
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/9.png")
+
+                div.card-content 
+                    p This is the best Dance Academy in NRW
